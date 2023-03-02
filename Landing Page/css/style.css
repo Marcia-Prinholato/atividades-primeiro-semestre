@@ -1,16 +1,47 @@
+/*import da fonte*/
+
+@font-face {
+    font-family: "Bebas Neue";
+    src: url(../assets/fonts/Bebas_Neue/BebasNeue-Regular.ttf);
+}
+
+
 /* Reset Css*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-body {
-    background-color: aqua;
+.layout-grid {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 3px solid white;
 }
 
+header {
+    background-color: red;
+    height: 60px;
+}
 
+header .header-flex {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
 
-    
+header nav {
+    width: 600px;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-    
+header nav a {
+    font-family: "Bebas Neue";
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
